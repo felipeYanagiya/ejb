@@ -30,7 +30,7 @@
         			<f:facet name="header">
         				<h:outputText value="Data Post" />
         			</f:facet>
-        			<h:outputText value="#{post.dataFormatada}" />
+        			<h:outputText value="#{post.data}" />
         		</h:column>
         		<h:column>        		
         			<f:facet name="header">
@@ -43,9 +43,8 @@
 					</h:commandButton>        
 					
 					<h:commandButton id="btnExcluir"  value="Excluir" action="#{listarPostsMB.remover}" >
-						<f:param name="titulo" value="#{post.titulo}" />
 						<f:param name="id" value="#{post.id}" />
-					</h:commandButton>    					
+					</h:commandButton>   					
 				</h:column>
 									
         	</h:dataTable>
