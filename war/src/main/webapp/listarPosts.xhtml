@@ -42,8 +42,7 @@
 						<f:param name="id" value="#{post.id}" />
 					</h:commandButton>        
 					
-					<h:commandButton id="btnExcluir"  value="Excluir" action="#{listarPostsMB.remover}" >
-						<f:param name="id" value="#{post.id}" />
+					<h:commandButton id="btnExcluir"  value="Excluir" action="#{listarPostsMB.remover(post.id)}">
 					</h:commandButton>   					
 				</h:column>
 									
