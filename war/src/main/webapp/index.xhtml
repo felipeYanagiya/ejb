@@ -20,6 +20,8 @@
 		<h:commandButton value="stateless" action="#{testarSessionBeanMB.testStateless}" />
 		<h:commandButton value="stateful" action="#{testarSessionBeanMB.testStateful}" />
 		<h:commandButton value="queueMsg" action="#{testarJMS.enviarParaFila}" />
+		<h:commandButton value="agendar" action="#{testarTimerMB.schedule}" />
+		<h:commandButton value="cancelar agendamento" action="#{testarTimerMB.cancelSchedule}" />
 	</h:form>
 
 </h:body>

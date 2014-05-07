@@ -5,7 +5,6 @@ import java.util.List;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.context.FacesContext;
 
 import br.com.dextra.treinamento.model.domain.Post;
 import br.com.dextra.treinamento.model.service.jpa.PostService;
