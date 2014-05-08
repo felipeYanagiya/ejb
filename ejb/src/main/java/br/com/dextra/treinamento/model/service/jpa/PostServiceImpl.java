@@ -23,7 +23,7 @@ public class PostServiceImpl implements PostService {
     }
 
     public void remover(Long id) {
-	Post post = em.find(Post.class, id);
+	Post post = findById(id);
 	em.remove(em.merge(post));
     }
 
@@ -41,4 +41,10 @@ public class PostServiceImpl implements PostService {
     public void setPosts(List<Post> posts) {
 	this.posts = posts;
     }
+
+    @Override
+    public Post findById(Long id) {
+	return em.find(Post.class, id);
+    }
+
 }

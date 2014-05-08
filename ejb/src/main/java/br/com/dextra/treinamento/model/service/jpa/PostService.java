@@ -9,6 +9,8 @@ public interface PostService {
     public void salvar(Post p);
     
     public void remover(Long id);
+    
+    public Post findById(Long id);
 
     public List<Post> listar();
 

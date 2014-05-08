@@ -18,6 +18,8 @@ public class ListarPostsMB {
     private static final String INCLUIR_POST = "incluirPost.xhtml";
 
     private static final String LISTAR_POSTS = "listarPosts.xhtml";
+    
+    private static final String ALTERAR_POST = "alterarPost.xhtml";
 
     private List<Post> posts;
 
@@ -47,8 +49,9 @@ public class ListarPostsMB {
 	return LISTAR_POSTS;
     }
 
-    public void prepararAlteracao() {
-
+    public String prepararAlteracao(Long postId) {
+	this.novoPost = postService.findById(postId);
+	return ALTERAR_POST;
     }
 
     public String remover(Long postId) {
