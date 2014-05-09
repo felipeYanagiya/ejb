@@ -42,7 +42,6 @@ public class PostServiceImpl implements PostService {
 	this.posts = posts;
     }
 
-    @Override
     public Post findById(Long id) {
 	return em.find(Post.class, id);
     }
