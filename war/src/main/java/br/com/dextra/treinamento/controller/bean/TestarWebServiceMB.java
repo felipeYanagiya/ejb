@@ -17,22 +17,6 @@ public class TestarWebServiceMB {
     TesteWebServiceInterface teste;
     private String titulo;
 
-    public String getTitulo() {
-	return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-	this.titulo = titulo;
-    }
-
-    public String getDescricao() {
-	return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-	this.descricao = descricao;
-    }
-
     private String descricao;
 
     public void testarWS() {
@@ -86,6 +70,22 @@ public class TestarWebServiceMB {
 
 	testeWebService.testarChamada();
 	return testeWebService;
+    }
+
+    public String getTitulo() {
+	return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+	this.titulo = titulo;
+    }
+
+    public String getDescricao() {
+	return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+	this.descricao = descricao;
     }
 
 }

@@ -24,7 +24,9 @@ public class PostServiceImpl implements PostService {
 
     public void remover(Long id) {
 	Post post = findById(id);
-	em.remove(em.merge(post));
+	if (post != null) {
+	    em.remove(em.merge(post));
+	}
     }
 
     @SuppressWarnings("unchecked")

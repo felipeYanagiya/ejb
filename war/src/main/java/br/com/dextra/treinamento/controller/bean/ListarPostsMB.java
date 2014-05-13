@@ -51,7 +51,10 @@ public class ListarPostsMB {
 
     public String prepararAlteracao(Long postId) {
 	this.novoPost = postService.findById(postId);
-	return ALTERAR_POST;
+	if (novoPost != null){
+	    return ALTERAR_POST;
+	}
+	return LISTAR_POSTS;
     }
 
     public String remover(Long postId) {
